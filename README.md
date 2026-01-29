@@ -12,7 +12,7 @@ Let's take a look inside `src` folder
 
   - `controllers` --> They are kind of the last middleware as post then you call your buissness layer to execute your buissness logic. In controller we just recieve the incoming requests and data and then pass it to the buissness layer, and once buissness layer returns an output, we structure the API response in controllers and send the output.
 
-  - `repositories` --> This folder contains all the logicusing which we interact tht DB by writing queries, all the raw queries or ORM queries go here. 
+  - `repositories` --> This folder contains all the logic using which we interact tht DB by writing queries, all the raw queries or ORM queries go here. 
 
   - `services` --> Contains the buissness logic and interacts with repositories for data from the database.
 
