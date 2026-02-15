@@ -4,11 +4,10 @@ const { SuccessResponse, ErrorResponse } = require('../utils/common');
 
 async function createBooking(req, res) {
   try {
-    console.log(req.body);
     const response = await BookingService.createBooking({
       flightId: req.body.flightId,
+      noOfSeats: req.body.noOfSeats,
       userId: req.body.userId,
-      noOfSeats: req.body.noOfSeats
     });
     SuccessResponse.data = response;
     return res
